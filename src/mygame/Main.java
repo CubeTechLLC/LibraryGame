@@ -41,13 +41,13 @@ public class Main extends SimpleApplication {
 
     @Override
     public void simpleInitApp() {
-        Spatial teapot = assetManager.loadModel("Models/sphere/sphere.j3o");
+        Spatial earth = assetManager.loadModel("Models/sphere/sphere.j3o");
         Material mat_default = new Material( 
             assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
         mat_default.setTexture("ColorMap", 
-            assetManager.loadTexture("Textures/test.jpg"));
-        teapot.setMaterial(mat_default);
-        rootNode.attachChild(teapot);
+            assetManager.loadTexture("Models/sphere/earth.jpg"));
+        earth.setMaterial(mat_default);
+        rootNode.attachChild(earth);
     }
 
     @Override
