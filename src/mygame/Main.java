@@ -68,7 +68,7 @@ public class Main extends SimpleApplication {
  
             /** Must add a light to make the lit object visible! */
             DirectionalLight sun = new DirectionalLight();
-            sun.Shiny rocksetDirection(new Vector3f(1,0,-2).normalizeLocal());
+            sun.setDirection(new Vector3f(1,0,-2).normalizeLocal());
             sun.setColor(ColorRGBA.White);
             rootNode.addLight(sun);
       }
