@@ -1,6 +1,7 @@
 package mygame;
 
 import com.jme3.app.SimpleApplication;
+import com.jme3.font.BitmapText;
 import com.jme3.light.DirectionalLight;
 import com.jme3.material.Material;
 import com.jme3.material.RenderState.BlendMode;
@@ -22,6 +23,10 @@ import com.jme3.util.TangentBinormalGenerator;
  * @author normenhansen
  */
 public class Main extends SimpleApplication {
+    BitmapText EarthHealth;
+    BitmapText CamPos;
+    BitmapText CamRot;
+    Spatial Earth; //These are only here to debug. Will be removed soon.
       public static void main(String[] args) {
             Main app = new Main();
             
@@ -39,7 +44,7 @@ public class Main extends SimpleApplication {
             //app.setShowSettings(false);
             
             app.setDisplayFps(true);
-            app.setDisplayStatView(false);
+            //app.setDisplayStatView(false);
             
             app.start();
       }
@@ -47,35 +52,55 @@ public class Main extends SimpleApplication {
       @Override
       public void simpleInitApp() {
             /** I just started learning this, so a lot of the code comes straight from the wiki. */
-            Sphere sphereMesh = new Sphere(32,32, 2f);
-            Geometry sphereGeo = new Geometry("Planet Earth", sphereMesh);
-            sphereMesh.setTextureMode(Sphere.TextureMode.Projected); // better quality on spheres
-            TangentBinormalGenerator.generate(sphereMesh);               // for lighting effect
-            Material sphereMat = new Material(assetManager, 
-            "Common/MatDefs/Light/Lighting.j3md");
-            sphereMat.setTexture("DiffuseMap", 
+            //Sphere EarthMesh = new Sphere(32,32, 2f);
+            Earth = assetManager.loadModel("Models/Earth/Earth.j3o");
+            //Geometry Earth = new Geometry("Planet Earth", EarthMesh);
+            //EarthMesh.setTextureMode(Sphere.TextureMode.Projected); // better quality on spheres
+            //TangentBinormalGenerator.generate(EarthMesh);               // for lighting effect
+            Material EarthMat = new Material(assetManager, 
+            "Common/MatDefs/Misc/Unshaded.j3md");
+            Earth.setMaterial(EarthMat);
+            EarthMat.setTexture("ColorMap", 
             assetManager.loadTexture("Models/Earth/Earth.jpg"));
-            sphereMat.setTexture("NormalMap", 
-            assetManager.loadTexture("Models/Earth/Earth-Normal.jpg"));
-            sphereMat.setBoolean("UseMaterialColors",true);            
-            sphereMat.setColor("Diffuse",ColorRGBA.White);
-            sphereMat.setColor("Specular",ColorRGBA.White);
-            sphereMat.setFloat("Shininess", 64f);  // [0,128]
-            sphereGeo.setMaterial(sphereMat);
-            sphereGeo.setLocalTranslation(0,2,-2); // Move it a bit
-            sphereGeo.rotate(1.6f, 0, 0);              // Rotate it a bit
-            rootNode.attachChild(sphereGeo);
- 
+            Earth.setLocalTranslation(0,0,8);
+            System.out.println(Earth.getLocalTranslation());
+            Earth.setUserData("health", 100);
+            rootNode.attachChild(Earth);
+            
             /** Must add a light to make the lit object visible! */
             DirectionalLight sun = new DirectionalLight();
             sun.setDirection(new Vector3f(1,0,-2).normalizeLocal());
             sun.setColor(ColorRGBA.White);
             rootNode.addLight(sun);
+            
+            //cam.setLocation(Vector3f.ZERO); //Puts camera at (0,0,0). Default is (0,0,10).
+            //cam.setRotation(Quaternion.IDENTITY); //Default is (0,1,0,0). Unknown to me how it works
+            
+            guiNode.detachAllChildren();
+            guiFont = assetManager.loadFont("Interface/Fonts/Default.fnt");
+            EarthHealth = new BitmapText(guiFont, false);
+            EarthHealth.setSize(guiFont.getCharSet().getRenderedSize());
+            //EarthHealth.setText("Earth's Health: " + Earth.getUserData("health"));
+            EarthHealth.setLocalTranslation(300, EarthHealth.getLineHeight(), 0);
+            CamPos = new BitmapText(guiFont, false);
+            CamPos.setSize(guiFont.getCharSet().getRenderedSize());
+            //CamPos.setText("Camera Coordinates: " + cam.getLocation() + " Camera Starting Rotation: " + cam.getRotation());
+            CamPos.setLocalTranslation(300, EarthHealth.getLineHeight()+CamPos.getLineHeight(), 0);
+            CamRot = new BitmapText(guiFont, false);
+            CamRot.setSize(guiFont.getCharSet().getRenderedSize());
+            CamRot.setLocalTranslation(300, EarthHealth.getLineHeight()+CamPos.getLineHeight()+CamRot.getLineHeight(), 0);
+            guiNode.attachChild(EarthHealth);
+            guiNode.attachChild(CamPos);
+            guiNode.attachChild(CamRot);
       }
 
       @Override
       public void simpleUpdate(float tpf) {
             //TODO: add update code
+          //EarthHealth.setText("Earth's Health: " + Earth.getUserData("health"));
+          EarthHealth.setText("Earth's Coordinates: " + Earth.getWorldTranslation());
+          CamPos.setText("Camera Coordinates: " + cam.getLocation());
+          CamRot.setText("Camera Rotation: " + cam.getRotation());
       }
 
       @Override
