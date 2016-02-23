@@ -1,0 +1,23 @@
+/home/senor/Documents/games/Library/mobile/bin/Library-release-unsigned.apk : \
+/home/senor/Documents/games/Library/mobile/bin/Library.ap_ \
+/home/senor/Documents/games/Library/mobile/bin/classes.dex \
+/home/senor/Documents/games/Library/mobile/libs/jME3-jogg.jar \
+/home/senor/Documents/games/Library/mobile/libs/jME3-android.jar \
+/home/senor/Documents/games/Library/mobile/libs/jME3-plugins.jar \
+/home/senor/Documents/games/Library/mobile/libs/Library.jar \
+/home/senor/Documents/games/Library/mobile/libs/jME3-niftygui.jar \
+/home/senor/Documents/games/Library/mobile/libs/nifty-default-controls.jar \
+/home/senor/Documents/games/Library/mobile/libs/jME3-core.jar \
+/home/senor/Documents/games/Library/mobile/libs/jME3-testdata.jar \
+/home/senor/Documents/games/Library/mobile/libs/j-ogg-vorbisd.jar \
+/home/senor/Documents/games/Library/mobile/libs/nifty-style-black.jar \
+/home/senor/Documents/games/Library/mobile/libs/j-ogg-oggd.jar \
+/home/senor/Documents/games/Library/mobile/libs/eventbus.jar \
+/home/senor/Documents/games/Library/mobile/libs/jME3-bullet.jar \
+/home/senor/Documents/games/Library/mobile/libs/jME3-terrain.jar \
+/home/senor/Documents/games/Library/mobile/libs/jME3-effects.jar \
+/home/senor/Documents/games/Library/mobile/libs/jME3-networking.jar \
+/home/senor/Documents/games/Library/mobile/libs/xmlpull-xpp3.jar \
+/home/senor/Documents/games/Library/mobile/libs/nifty.jar \
+/home/senor/Documents/games/Library/mobile/libs/armeabi-v7a/libbulletjme.so \
+/home/senor/Documents/games/Library/mobile/libs/armeabi/libbulletjme.so \

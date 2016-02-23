@@ -1,0 +1,26 @@
+/home/senor/Documents/games/Library/mobile/bin/classes.dex : \
+/home/senor/Documents/games/Library/mobile/bin/classes/com/cubetechllc/library/R$attr.class \
+/home/senor/Documents/games/Library/mobile/bin/classes/com/cubetechllc/library/R$drawable.class \
+/home/senor/Documents/games/Library/mobile/bin/classes/com/cubetechllc/library/BuildConfig.class \
+/home/senor/Documents/games/Library/mobile/bin/classes/com/cubetechllc/library/R$string.class \
+/home/senor/Documents/games/Library/mobile/bin/classes/com/cubetechllc/library/MainActivity.class \
+/home/senor/Documents/games/Library/mobile/bin/classes/com/cubetechllc/library/R$layout.class \
+/home/senor/Documents/games/Library/mobile/bin/classes/com/cubetechllc/library/R.class \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/jME3-jogg-5c95ad4607f875e779d8e23c2e93070b.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/jME3-android-244a5f9cd81e383e3ac1a896fec3808a.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/jME3-plugins-bc5c58bb9641c0b20fc30065d4420940.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/Library-7b7b62d299292e60ff41bff70fed1c19.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/jME3-niftygui-3ecd6202471e13a46051a0de7d802f21.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/nifty-default-controls-0e67e69f001ac62611995bb05d62ffbd.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/jME3-core-d209a822c15e2e2eb2bd88865754eb0a.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/jME3-testdata-d3192a5f882fa5c810be60bd38fa7bc7.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/j-ogg-vorbisd-7ac01c0cc0e19e2bbb488e6904b2195d.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/nifty-style-black-e22df8f2df92f8f5e158a7a9e2cfc764.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/j-ogg-oggd-3d1f9ca7e427f429797988c94e9dfdcb.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/eventbus-a8c70b08415fe0d6db6c7e71b7bc461d.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/jME3-bullet-c07d9f188a2512dc842afd305272c4c0.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/jME3-terrain-58483d6c9b2d8936be2d8d33a694d6f4.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/jME3-effects-7c1e1ce946519eb9753ecdd8efc10762.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/jME3-networking-60fcf0a33cfd9749dcf0d56796ee1273.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/xmlpull-xpp3-7e83c5f3fee0cc25db96b166f1f56577.jar \
+/home/senor/Documents/games/Library/mobile/bin/dexedLibs/nifty-e5991370fd13a1404d119c9eb1f2fbc3.jar \
