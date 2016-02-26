@@ -1,4 +1,4 @@
-package mygame;
+package com.cubetechllc.library;
 
 import com.jme3.app.SimpleApplication;
 import com.jme3.font.BitmapText;
